@@ -1,0 +1,155 @@
+body, html {
+    margin: 0;
+    background-image: linear-gradient(to bottom, rgba(0,88,140, 1), rgba(0,88,140, 0));
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 32%;
+    height: 100%;
+    margin: 0;
+    border-radius: 20px;
+}
+input:focus{
+    border: 0;
+    outline: none !important;
+}
+.container>.bg {
+    background-image: url('img/logoPOLI.png');
+    background-size: 100%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    position: absolute;
+    background-color:#FFF;
+    border-radius: 20px;
+    height: 610px;
+    width: 564px;
+    box-shadow:  5px 3px 10px 6px rgba(0, 0, 0, 0.2);
+}
+.card-header {
+    height: 150px;
+    background-color: #FFF;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card-body {
+    margin-left: 40px;
+    margin-right: 40px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.card-body>h5 {
+    flex: 1;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow:  1px 1px 8px 1px rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    border-radius: 10px;
+    height: 45px;
+}
+.form-group>label>svg {
+    width: 15px;
+    height: 20px;    
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#lockicon {
+    width: 20px;
+    height: 20px;
+    padding-left: 8px; 
+}
+.form-control {
+    flex: 1;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    border: 0;
+    padding: 10px;
+    padding-left: 2px;
+    border-radius: 10px;
+}
+.btnEntrar {
+    padding: 15px;
+    background-color: #0051ff;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin: 8px;
+    border-radius: 10px;
+    box-shadow:  1px 1px 8px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 564px) {
+    body, html {
+        background-image: none;
+    }
+    .card {
+        box-shadow: none;
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .card-body>h5 {
+        font-size: 16px;
+    }
+}
+@media screen and (height: 568px) and (width: 320px) {
+    img {
+        width: 32%;
+        height: 80%;
+        margin: 0;
+        border-radius: 0;
+    }
+}
+@media screen and (min-height: 1366px) and (min-width: 1024px) {
+    body, html {
+        background-image: none;
+    }
+    .card {
+        box-shadow: none;
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .card-header {
+        height: 20%;
+    }
+    .card-body {
+        height: 22%;
+    }
+    .card-body>h5 {
+        font-size: 22px;
+    }
+    .card-footer {
+        height: 20%;
+    }
+}

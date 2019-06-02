@@ -14,6 +14,11 @@ img {
     margin: 0;
     border-radius: 20px;
 }
+#dti-logo {
+    width: 115px;
+    height: 100px;
+    align-self: center;
+}
 input:focus{
     border: 0;
     outline: none !important;
@@ -59,6 +64,19 @@ input:focus{
     padding: 10px;
     margin: 20px;
 }
+.card-footer {
+    display: flex;
+    flex-direction: column;
+}
+.card-footer>h5 {
+    
+    align-self: center;
+    padding: 15px;
+    margin: 0px;
+    background-color: #ffd27181;
+    border: 1px solid #ffd271;
+    border-radius: 10px;
+}
 form {
     display: flex;
     flex-direction: column;
@@ -91,10 +109,15 @@ form {
     flex: 1;
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
+    font-weight: 700;
     border: 0;
     padding: 10px;
     padding-left: 2px;
     border-radius: 10px;
+    margin-right: 5px;
+}
+.form-control::placeholder {
+    font-weight: 600;
 }
 .btnEntrar {
     padding: 15px;
@@ -121,19 +144,39 @@ form {
     .card-body>h5 {
         font-size: 16px;
     }
+    .card-footer>h5 {
+        width: 65%;
+        text-align: center;
+    }
 }
 @media screen and (height: 568px) and (width: 320px) {
     img {
         width: 32%;
-        height: 80%;
+        height: 100%;
         margin: 0;
         border-radius: 0;
+    }
+    .card-header {
+        height: 120px;
+    }
+    .card-body>h5 {
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    .card-footer {
+        margin-top: 5px;
+        justify-content: center;
+    }
+    .card-footer>h5 {
+        font-size: 12px;
+        width: 60%;
+        text-align: center;
     }
 }
 @media screen and (min-height: 1366px) and (min-width: 1024px) {
     body, html {
         background-image: none;
-    }
+    }    
     .card {
         box-shadow: none;
         border-radius: 0;
@@ -141,13 +184,20 @@ form {
         height: 100%;
     }
     .card-header {
-        height: 20%;
+        height: 15%;
+    }
+    img {
+        height: 100%;
+        width: 30%;
     }
     .card-body {
         height: 22%;
     }
     .card-body>h5 {
         font-size: 22px;
+        margin-top: 40px;
+        padding: 10px;
+        height: 30%;
     }
     .card-footer {
         height: 20%;

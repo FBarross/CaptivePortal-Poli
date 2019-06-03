@@ -23,18 +23,6 @@ input:focus{
     border: 0;
     outline: none !important;
 }
-.container>.bg {
-    background-image: url('img/logoPOLI.png');
-    background-size: 100%;
-    border-radius: 20px;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    opacity: 0.5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .card {
     position: absolute;
     background-color:#FFF;

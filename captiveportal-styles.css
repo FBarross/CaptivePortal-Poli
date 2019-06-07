@@ -105,7 +105,7 @@ input:focus{
     align-self: center;
     padding: 15px;
     margin: 0px;
-    background-color: #ffd27181;
+    background-color: rgba(255,210,113, 0.8);
     border: 1px solid #ffd271;
     border-radius: 10px;
 }

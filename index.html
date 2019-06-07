@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="captiveportal-styles.css" />
+    <link rel="stylesheet" href="captiveportal-fonts.css" />
     <link rel="icon" type="image/png" href="captiveportal-ico.png" />
-    <title>Portal de acesso a rede POLI/FCAP</title>
+    <title>Portal de acesso à rede do campus benfica</title>
     <meta name="theme-color" content="#eee" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#eee"/>
     <meta name="msapplication-navbutton-color" content="#eee"/>
 </head>
 <body>
-    <div class="card">
-        <div class="card-header">
+    <div class="card">        
+        <header class="card-header">
             <img src="captiveportal-logoPOLI.png" alt="Logo Poli">
-            <img src="captiveportal-logoUPE.png" alt="Logo UPE">
+            <img src="captiveportal-logoUPE.png" alt="Logo UPE" id="logoUPE">
             <img src="captiveportal-logoFCAP.jpg" alt="Logo FCAP">
-        </div>
+        </header>        
         <div class="card-body">
             <h5>Digite suas credenciais para ter acesso <wbr>à internet!</h5>
             <form autocomplete="off" method="post" action="$PORTAL_ACTION$">                
@@ -34,10 +35,10 @@
                 <input type="submit" name="accept" class="btnEntrar" value="Entrar" />
             </form>
         </div>
-        <div class="card-footer">
+        <footer class="card-footer">
             <h5>* dados de uso pessoal e intransferível.</h5>
             <img src="captiveportal-logoDTI.png" id="dti-logo" alt="DTI logo">
-        </div>
+        </footer>
     </div>
 </body>
 </html>
